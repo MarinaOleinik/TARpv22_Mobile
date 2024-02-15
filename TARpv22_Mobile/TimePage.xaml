@@ -13,7 +13,7 @@
                 TextColor="#47A835" 
                 FontSize="Subtitle">
                 <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
                 </Label.GestureRecognizers>
             </Label>
             <Button 

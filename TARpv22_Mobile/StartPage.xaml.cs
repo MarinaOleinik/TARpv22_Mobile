@@ -26,6 +26,25 @@ namespace TARpv22_Mobile
                 BackgroundColor = Color.FromRgb(100, 32, 34),
                 TextColor = Color.Fuchsia
             };
+            Button Entry_b22tn = new Button
+            {
+                Text = "Entry leht",
+                BackgroundColor = Color.FromRgb(100, 32, 34),
+                TextColor = Color.Fuchsia
+            };
+            Button Time_b2tn = new Button
+            {
+                Text = "Time leht",
+                BackgroundColor = Color.FromRgb(100, 32, 34),
+                TextColor = Color.Fuchsia
+            };
+            Button Entry_bt2n = new Button
+            {
+                Text = "Entry leht",
+                BackgroundColor = Color.FromRgb(100, 32, 34),
+                TextColor = Color.Fuchsia
+            };
+            
             StackLayout st = new StackLayout
 			{
 				Orientation = StackOrientation.Vertical,
@@ -33,11 +52,13 @@ namespace TARpv22_Mobile
 			};
 			st.Children.Add(Entry_btn);
 			st.Children.Add(Time_btn);
+            
 			Content = st;
-            Entry_btn.Clicked += Entry_btn_Clicked;
+            
             Time_btn.Clicked += Time_btn_Clicked;
+           
 
-		}
+        }
 
         private async  void Time_btn_Clicked(object sender, EventArgs e)
         {
@@ -48,5 +69,6 @@ namespace TARpv22_Mobile
         {
             await Navigation.PushAsync(new EntryPage());
         }
+        
     }
 }
